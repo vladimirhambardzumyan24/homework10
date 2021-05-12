@@ -2,14 +2,14 @@ function find(array, action) {
   for (let index = 0; index < array.length; index++) {
     const element = array[index];
     if (action(element, index, array)) {
-      return true;
+      return element;
     }
   }
-  return false;
+  return ;
 }
 
 const action = (el) => {
-  return el === 44;
+  return el === 4;
 };
 
 let numbers = [-5, -4, 0, 1, 2, 3, 4, 5];
