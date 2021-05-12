@@ -1,5 +1,4 @@
-function sum() {
-  let args = Array.from(arguments);
+function sum(...args) {
   console.log(args);
   return args.reduce((sum, current) => {
     return sum + current;
